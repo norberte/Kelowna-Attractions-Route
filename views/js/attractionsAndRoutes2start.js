@@ -178,7 +178,7 @@ function displayRecommendedRoutes(listId,rid, uname){
 					 selectedAids.push(jsonClicked_recRoute[x].aid);
 					 console.log(jsonClicked_recRoute[x]+ " "+ jsonClicked_recRoute[x].aid);
 					 makeMarker(jsonClicked_recRoute[x]);
-				}
+				}(i);
             },
             error: function (err) {
                 console.log('Error, Ajax call unsuccessful.', err);
