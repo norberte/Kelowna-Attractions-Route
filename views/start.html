@@ -74,7 +74,7 @@
 	<div class="input-group-btn">
 		<button value = "Submit" class="btn btn-default" type="button">Submit</button>
 	</div>
-	<br><br>
+	<br><
 	</form>
 	<form class="w3-container w3-blue" style = "box-shadow: 10px 10px 5px #888888">
 	<ul class="w3-ul w3-card-4" id = "recRouteList">
@@ -123,8 +123,12 @@
 	<br>
 	</form>
 	<form class="w3-container w3-blue w3-padding-4" style = "box-shadow: 10px 10px 5px #888888">
-	<button onclick ="attrListMinus();return false;" style = 'display:none' id = 'backBtn'>Go Back </button>
-	<button onclick ='attrListPlus();return false;'>Load More </button>
+	<div class="input-group-btn">
+		<button onclick ="attrListMinus();return false;" style = 'display:none' id = 'backBtn'>Go Back </button>
+	</div>
+	<div class="input-group-btn">
+		<button onclick ='attrListPlus();return false;'>Load More </button>
+	</div>
 	<hr>
 	<ul class="w3-ul w3-card-4" id ="attrList">
 	</ul>
