@@ -32,6 +32,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <body class="w3-content" style="max-width:2000px">
 
 <ul style = "list-style-type: none;
@@ -62,13 +63,14 @@
 	<h3>Ending Location</h3>
 	<div class="row">
 	<div class="col-lg-6">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
+	<div class="input-group">
+		<input type="text" class="form-control" id="destPos" placeholder = "Address">
+			<span class="input-group-btn">
+				<button onclick="getLocation('destPos')" class="btn btn-default" type="button"><i class="material-icons w3-large">my_location</i></button>
+			</span>
+	</div>
+	</div>
+	</div>
 	<br>
 	<input type="button" value="Submit" onclick="proceed(false)">
 	<br><br>
@@ -141,6 +143,7 @@
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAmVV2Ab0atjhri97nB2q1OGD_Eb6xW-Hw&libraries=places&js?sensor=false"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/attractionsAndRoutes2start.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 var y = 0;
 var z = 0;
