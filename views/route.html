@@ -150,7 +150,13 @@ if(sessionStorage.aid != "null")	{
 }
 
 if(sessionStorage.rid != "null")	{
+	for(var x = 0;x<selectedAids.length;x++)	{
+		console.log(selectedAids[x]);
+	}
 	displayRecommendedRoutes("selectedList",Number(sessionStorage.rid),sessionStorage.uname);
+	for(var x = 0;x<selectedAids.length;x++)	{
+		console.log(selectedAids[x]);
+	}
 }
 
 updateCheckBoxs();
